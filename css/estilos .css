@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{  font-size: 1.25em;}
+li{list-style: none;}
+li{font-size: 1.25em;}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30 px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: red;
+
+}
+button .hover{
+    background-color: rgba(241, 19, 19, 0.966);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header .logo{
+ 
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: rgba(250, 2, 2, 0.959);
+}
+header .container{
+    display: flex;
+  /*  flex-direction: row;  */
+    align-items: center;
+}
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding:  5px 12px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    color: red;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),rgba(0,0,0,0.5) )
+    ,url(../img/wallpaperbetter.jpg);
+   
+   
+
+}
+#hero h1{
+    color: white;
+}
+#Nuestras-pelis{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+
+}
+#Nuestras-pelis .container{
+    padding: 100px 12 px;
+}
+#Nuestras-pelis h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+#Nuestras-pelis .h3{
+    margin-top: 0;
+     
+}
+#Nuestras-pelis .carta{
+    background-position:center center ;
+    background-size: cover;
+    padding: 60px 60px;
+    margin: 20px;
+    border-radius: 15px;
+     
+}
+.carta:first-child{
+    background-image: linear-gradient(0deg, 
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5) 
+    )
+    ,url("../img/avengers.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, 
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5) 
+    )
+    ,url("../img/bumblebee.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, 
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5) 
+    )
+    ,url("../img/arrow.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#buscador .container{
+    text-align: center;
+    color: rgb(red, green, blue);
+    padding: 80px 12px;
+    background-color: whitesmoke;
+}
+img.img-thumbnail{
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+}
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    margin: 0;
+    padding: 50px;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@media(min-width:850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header.container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    #Nuestras-pelis .pelis{
+        display: flex;
+        justify-content: center;
+    }
+    #Nuestras-pelis .h3{
+       margin-top: 0;
+    }
+    #Nuestras-pelis .carta{
+       padding: 100px;
+    }
+    #buscador .container{
+      justify-content: space-evenly;
+    }
+    #buscador .texto{
+      width: 50%;
+      max-width: 600px;
+      text-align: center;
+      padding-left: 30px;
+      justify-content: center;
+    }
+
+    #buscador h2{
+        margin-top: 0px;
+    }
+
+}
